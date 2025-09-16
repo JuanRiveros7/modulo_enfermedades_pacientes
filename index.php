@@ -32,7 +32,7 @@ session_start();
       <form id="uploadForm" action="validacion_file.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="file-input" class="form-label">Seleccionar archivo (CSV/TXT)</label>
-          <input class="form-control" type="file" name="dataCliente" id="file-input" accept=".csv,.txt" required>
+          <input class="form-control" type="file" name="dataPasiente" id="file-input" accept=".csv,.txt" required>
         </div>
 
         <div class="d-grid">

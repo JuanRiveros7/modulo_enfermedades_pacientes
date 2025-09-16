@@ -3,12 +3,12 @@ require("database/config.php");
 header('Content-Type: application/json; charset=utf-8');
 
 // Valida el archivo subido
-if (!isset($_FILES['dataCliente']) || $_FILES['dataCliente']['error'] != UPLOAD_ERR_OK) {
+if (!isset($_FILES['dataPasiente']) || $_FILES['dataPasiente']['error'] != UPLOAD_ERR_OK) {
     echo json_encode(["status" => "error", "message" => "Error al subir el archivo"]);
     exit;
 }
 
-$archivotmp = $_FILES['dataCliente']['tmp_name'];
+$archivotmp = $_FILES['dataPasiente']['tmp_name'];
 $lineas     = file($archivotmp);
 
 $i = 0;
